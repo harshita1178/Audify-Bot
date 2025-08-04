@@ -57,3 +57,4 @@ pycryptodome
 opencv-python
 yt-dlp>=2025.6.25
 uvloop
+telethon 
