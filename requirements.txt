@@ -50,6 +50,7 @@ speedtest-cli
 spotipy
 SpeechRecognition
 telegraph
+telethon
 tgcrypto
 unidecode
 uvloop
