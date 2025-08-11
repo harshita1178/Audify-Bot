@@ -25,12 +25,12 @@ API_KEY = getenv("API_KEY", None)
 DOWNLOADS_DIR = "downloads"
 
 # Basic Bot Configs
-OWNER_USERNAME = getenv("OWNER_USERNAME", "Nikchil") #Replace With Yours ~
-BOT_USERNAME = getenv("BOT_USERNAME", "AudifyMusicBot") #Replace With Yours ~
-BOT_NAME = getenv("BOT_NAME", "Audify") #Replace With Yours ~
-ASSUSERNAME = getenv("ASSUSERNAME", "AudifyAssistant") #Replace With Yours ~
-LOGGER_ID = int(getenv("LOGGER_ID", "-1002723963783")) #Replace With Yours ~
-BOT_LOGS_CHANNEL = int(getenv("BOT_LOGS_CHANNEL", "-1002731989493")) #Replace With Yours ~
+OWNER_USERNAME = getenv("OWNER_USERNAME", "ANIMELOVER7849") #Replace With Yours ~
+BOT_USERNAME = getenv("BOT_USERNAME", "Priyu_X_Music_Bot") #Replace With Yours ~
+BOT_NAME = getenv("BOT_NAME", "Priyu X Music") #Replace With Yours ~
+ASSUSERNAME = getenv("ASSUSERNAME", "Somya_Asistent") #Replace With Yours ~
+LOGGER_ID = int(getenv("LOGGER_ID", "-1002372914024")) #Replace With Yours ~
+BOT_LOGS_CHANNEL = int(getenv("BOT_LOGS_CHANNEL", "-1002337406141")) #Replace With Yours ~
 
 # MongoDB
 MONGO_DB_URI = getenv("MONGO_DB_URI", None)
@@ -56,7 +56,7 @@ HEROKU_API_KEY = getenv("HEROKU_API_KEY", None)
 # GitHub Upstream
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/GrayBots/Audify",
+    "https://github.com/harshita1178/Audify-Bot",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
 GIT_TOKEN = getenv(
@@ -64,8 +64,8 @@ GIT_TOKEN = getenv(
 )  # Fill this variable if your upstream repository is private
 
 # Support
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/GrayBots")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/GrayBotSupport")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/Voixverse_Collections")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/+j0cdm1eto7YzOTdl")
 SOURCE_CODE = getenv("SOURCE_CODE", "https://github.com/GrayBots/Audify")
 PRIVACY_LINK = getenv("PRIVACY_LINK", "https://telegra.ph/Privacy-Policy-for-Audify-Music--Management-08-02-2")
 
