@@ -1,3 +1,4 @@
+
 # ---------------------------------------------------------
 # Audify Bot - All rights reserved
 # ---------------------------------------------------------
@@ -59,14 +60,14 @@ async def on_sgen_cb(_, query):
         await query.message.reply("❌ Telethon does not support Bot session generation.")
 
 # ---------------------- Message Flow ---------------------- #
-
-@app.on_message(filters.text & filters.private)
+# Added group=1 so default command handlers (group=0) run first
+@app.on_message(filters.text & filters.private, group=1)
 async def handle_input(_, message: Message):
     user_id = message.from_user.id
     text = message.text.strip()
 
     if user_id not in session_users:
-        return
+        return  # Let other handlers process the message if not in session flow
 
     data = session_users[user_id]
     stage = data["stage"]
@@ -131,7 +132,7 @@ async def handle_input(_, message: Message):
                 data["stage"] = "get_otp"
                 await message.reply("✅ Now send the **OTP** as space-separated digits (e.g. `1 2 3 4 5`):")
             else:
-                client = TeleClient(StringSession(), api_id=data["api_id"], api_hash=data["api_hash"])
+                client = TeleClient(TeleString(), api_id=data["api_id"], api_hash=data["api_hash"])
                 client.connect()
                 sent = client.send_code_request(text)
                 data["tele_client"] = client
