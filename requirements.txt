@@ -31,7 +31,7 @@ pillow==9.5.0
 psutil
 pycountry
 pycryptodome
-py-dub
+pydub
 pyfiglet
 pykeyboard
 pymshorteners
