@@ -2,7 +2,7 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message
 from pyrogram import Client, filters, enums 
 
 import config
-from BeatGuard import app
+from Audify import app
 
 class BUTTONS(object):
     BBUTTON = [
