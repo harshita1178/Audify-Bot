@@ -34,7 +34,7 @@ pycryptodome
 pydub
 pyfiglet
 pykeyboard
-pymshorteners
+pyshorteners
 pyrofork
 python-dotenv
 python-telegram-bot==20.7
